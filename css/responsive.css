@@ -1,0 +1,222 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 810px) {
+    .container {
+        padding: 0 50px !important;
+    }
+ /* _______________NAV________________________________ */
+ .logo img {
+	width: 132px;
+	height: 50px;
+}
+
+/* ____________________banner-bottom___________________________ */
+.banner-bottom-content {
+	grid-template-columns: repeat(3,1fr);
+}
+.iPad-res-none{
+    display: none;
+}
+.top-area {
+	margin-bottom: 0;
+}
+/* ___________________what____________________________ */
+.what-area {
+	display: block;
+	height: 50vh;
+}
+.what-area img {
+	width: 100%;
+	display: none;
+}
+/* _____________________card__________________________ */
+.card-body {
+	grid-template-columns: repeat(2,1fr);
+}
+/* _____________________reap__________________________ */
+.reap-body {
+	display: block;
+}
+.reap-body img {
+	width: 75%;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 45px;
+}
+/* _____________________safety__________________________ */
+.safety {
+	height: 50vh;
+}
+.safety-body {
+	top: 10%;
+}
+.GradientDAO {
+	display: block;
+}
+/* ____________________gradient___________________________ */
+.single-GradientDAO {
+	width: 100%;
+}
+/* ____________________footer___________________________ */
+.footer-item {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 60px;
+}
+
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+    .btn {
+        padding: 6px 7px 9px 12px;
+        font-size: 13px;
+    }
+ /* _______________NAV________________________________ */
+ .logo img {
+    width: 200px;
+    height: 55px;
+}
+/* ____________________banner___________________________ */
+.banner-area {
+	margin-top: 50px;
+}
+.banner-area h2 {
+	font-size: 28px;
+}
+.banner-area p {
+	font-size: 14px;
+}
+.btn-img {
+	width: 15%;
+}
+
+/* ___________________banner-bottom____________________________ */
+.banner-bottom-content {
+	grid-template-columns: repeat(1,1fr);
+    grid-gap: 20px;
+}
+.border {
+	display: none;
+}
+/* ___________________what____________________________ */
+.what-area {
+	display: block;
+	margin-top: 240px;
+    height: 50vh;
+}
+.single-what-sec h1 {
+	font-size: 24px;
+}
+p {
+	font-size: 14px;
+}
+.what-area img {
+	display: none;
+}
+/* ___________________card____________________________ */
+.card-body {
+	grid-template-columns: repeat(1,1fr);
+	grid-gap: 0;
+    margin-bottom: 0;
+}
+.single-card p {
+	font-size: 14px;
+	margin: 0;
+}
+/* __________________reap_____________________________ */
+.reap-body {
+	display: block;
+}
+.single-reap h2 {
+	font-size: 24px;
+}
+.reap-body {
+	margin-top: 40px;
+}
+.single-reap p {
+	font-size: 16px;
+}
+.reap-body img {
+	width: 75%;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 45px;
+}
+/* _______________________safety________________________ */
+.safety-body {
+	top: 10%;
+}
+.safety h2 {
+	font-size: 24px;
+}
+.safety p {
+	font-size: 10px;
+}
+.safety {
+	height: 40vh;
+}
+/* _____________________gradient__________________________ */
+.GradientDAO {
+	display: block;
+}
+.single-GradientDAO h2 {
+	font-size: 24px;
+}
+.single-GradientDAO {
+	width: 100%;
+}
+.single-GradientDAO p {
+	font-size: 14px;
+}
+/* ___________________footer____________________________ */
+.footer-title {
+	margin-top: 70px;
+	margin-bottom: 40px;
+}
+h2 {
+	font-size: 24px;
+}
+.footer-icon img {
+	width: 6%;
+}
+.footer-title p {
+	margin-bottom: 28px;
+}
+.footer-item {
+	grid-template-columns: repeat(1,1fr);
+	grid-gap: 0px;
+}
+.single-item ul li a {
+	line-height: normal;
+}
+.footer {
+	height: 150vh;
+}
+.single-item img {
+	width: 45%;
+}
+}

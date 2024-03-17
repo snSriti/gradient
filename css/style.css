@@ -1,0 +1,396 @@
+/* ____________________Common CSS________________________________ */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+body {
+    margin: 0;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #0E121B;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Zen Dots", sans-serif;
+    color: #fff;
+}
+h2{
+    font-size: 48px;
+}
+p{
+    font-family: "DM Sans", sans-serif;
+    color:#D9D9D9 ;
+    font-size: 24px;
+}
+a{
+    font-family: "DM Sans", sans-serif;
+}
+.container {
+    padding: 0 120px;
+}
+.btn {
+    background: transparent;
+    padding: 16px 35px 16px 20px;
+    color: #fff;
+    font-size: 20px;
+    max-width: 300px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+}
+.btn-active {
+    background: linear-gradient(
+        90deg,
+        #182033 -0.26%,
+        #1a2338 2.75%,
+        #232e49 7.77%,
+        #304063 12.79%,
+        #435889 17.81%,
+        #536da8 21.82%,
+        #44598a 23.83%,
+        #34446a 27.84%,
+        #273452 31.85%,
+        #1e2940 34.86%,
+        #192236 39.88%,
+        #182033 44.9%,
+        #1b2338 56.94%,
+        #222b45 68.98%,
+        #384a73 100.08%
+    );
+    margin-right: 20px;
+}
+.btn-img {
+    width: 10%;
+}
+/*______________________ header_____________________ */
+.top-area {
+    background-image: url(../img/banner-bg.png);
+    height: 100vh;
+    background-color: #0d111a;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 150px;
+}
+.logo img {
+    width: 250px;
+    height: 69px;
+    top: 48px;
+    left: 180px;
+}
+.header {
+    width: 100%;
+}
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #989898;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "Zen Dots", sans-serif;
+}
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #f4f4f4;
+}
+.nav-icon {
+    width: 40px;
+    margin-top: 13px;
+}
+/* menu */
+
+.header .menu {
+    clear: both;
+    /* max-height: 0; */
+    transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+.header .menu-btn:checked ~ .menu {
+    max-height: 500px;
+}
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .header .menu {
+        max-height: 0;
+    }
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 22px 14px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        /* max-height: none; */
+    }
+    .header .menu-icon {
+        display: none;
+    }
+}
+/* _______________Banner_____________________________ */
+.banner-area {
+    text-align: center;
+    margin-top: 150px;
+}
+.banner-area h2 {
+    font-size: 50px;
+    color: #fff;
+    margin: 0;
+}
+.banner-area p {
+    font-size: 20px;
+    color: #fff;
+}
+.banner-title {
+    background: linear-gradient(
+        142.6deg,
+        #182033 52.86%,
+        #1a2338 54.26%,
+        #232e49 56.58%,
+        #304063 58.91%,
+        #435889 61.23%,
+        #536da8 63.09%,
+        #44598a 64.02%,
+        #34446a 65.88%,
+        #273452 67.74%,
+        #1e2940 69.14%,
+        #192236 71.47%,
+        #182033 73.79%,
+        #1b2338 79.37%,
+        #222b45 84.95%,
+        #384a73 99.37%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* __________________banner bottom__________________________ */
+.banner-bottom-content {
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-gap: 50px;
+	margin-top: 70px;
+	align-items: center;
+}
+.single-banner-bottom h2 {
+	font-size: 13px;
+	color: #fff;
+}
+.single-banner-bottom h3 {
+	font-size: 48px;
+	color: #fff;
+    margin-top: 29px;
+}
+.single-banner-bottom {
+	text-align: center;
+}
+.border{
+    height: 110px;
+    width: 1px;
+    background-color: #fff;
+    margin-left: 70px;
+}
+/* __________________what__________________________ */
+.what-area{
+background: url(../img/what.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+display: flex;
+}
+.what-area img {
+	width: 100%;
+}
+/* ___________________card_________________________ */
+.card-body {
+	margin-bottom: 100px;
+}
+.card-body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px !important;
+    background-color: #0D111A;
+}
+.single-card {
+	text-align: center;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.single-card p {
+	font-size: 24px;
+}
+.single-card img {
+	width: 20%;
+}
+.single-card img {
+	margin-top: 55px;
+}
+
+/* _________________reap___________________________ */
+.reap{
+    background: url(../img/reap.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+}
+.reap-body {
+	display: flex;
+	align-items: center;
+}
+.single-reap h2{
+	color: #fff;
+    font-size: 40px;
+}
+.single-reap p {
+	color: #D9D9D9;
+	font-size: 24px;
+}
+.reap-body img {
+	width: 90%;
+}
+/* ________________safety____________________________ */
+.safety{
+    background: url(../img/Group.png);
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.safety-body{
+    position: absolute;
+    top: 30%;
+}
+.safety h2 {
+	color: #fff;
+}
+.safety p {
+	color: #D9D9D9;
+	font-size: 24px;
+}
+/* ___________________GradientDAO_________________________ */
+.GradientDAO{
+    display: flex;
+    justify-content: space-between;
+}
+.single-GradientDAO{
+    width: 50%;
+}
+.single-GradientDAO h2 {
+	color: #fff;
+	font-size: 40px;
+}
+.single-GradientDAO p {
+	color: #D9D9D9;
+	font-size: 18px;
+}
+/* __________________footer__________________________ */
+.footer{
+    background: url(../img/footer.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.footer-title {
+	margin-top: 200px;
+	text-align: center;
+	margin-bottom: 140px;
+}
+.f-icon {
+	width: 61px;
+}
+.footer-title p {
+	margin-bottom: 47px;
+}
+.footer-title a {
+	text-decoration: none;
+}
+.footer-item {
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-gap: 60px;
+}
+.single-item ul{
+	padding: 0;
+}
+.single-item ul li {
+	list-style: none;
+}
+.single-item ul li a {
+	text-decoration: none;
+	color: #d9d9d9;
+	line-height: 2;
+}
